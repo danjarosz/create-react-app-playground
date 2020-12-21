@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import clsx from "clsx";
 import "./Button.css"; // Tell webpack that Button.js uses these styles
-import styles from "./Button.module.css"; // Import css modules stylesheet as styles
+import styles from "./Button.module.scss"; // Import scss modules stylesheet as styles
 
 class Button extends Component {
   render() {
