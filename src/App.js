@@ -21,6 +21,11 @@ function App() {
         >
           Learn React
         </a>
+        <p>Image form public folder</p>
+        <img
+          src={process.env.PUBLIC_URL + "/logo192.png"}
+          alt="logo from public"
+        />
       </header>
     </div>
   );
