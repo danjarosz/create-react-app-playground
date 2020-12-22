@@ -7,11 +7,16 @@ class Button extends Component {
   render() {
     // You can use them as regular CSS styles
 
+    const { handleClick, text } = this.props;
+
     const error = true;
     return (
-      <div className={clsx("Button", error && styles.error)}>
-        Button component
-      </div>
+      <button
+        className={clsx("Button", error && styles.error)}
+        onClick={handleClick}
+      >
+        {text}
+      </button>
     );
   }
 }

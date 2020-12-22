@@ -4,10 +4,21 @@ import Button from "./components/Button/Button";
 import "./App.scss";
 
 function App() {
+  //fetching module on click
+  const fetchChunkedModule = () => {
+    import("./modules/moduleA")
+      .then(({ moduleA }) => {
+        console.log(moduleA);
+      })
+      .catch((err) => {
+        throw new Error(err);
+      });
+  };
+
   return (
     <div className="App">
       <header className="App-header">
-        <Button />
+        <Button handleClick={fetchChunkedModule} text="fetch module" />
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Logo className="App-logo" title={"logo"} alt="logo" />
         <p>

@@ -1,4 +1,6 @@
 .Button {
   padding: 20px;
   background-color: teal;
+  font-size: 20px;
+  text-transform: uppercase;
 }
