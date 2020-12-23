@@ -38,6 +38,15 @@ function App() {
           alt="logo from public"
         />
       </header>
+      <div>
+        <p>You running the app in {process.env.NODE_ENV} mode</p>
+        <form>
+          <input
+            type="text"
+            defaultValue={process.env.REACT_APP_NOT_SECRET_CODE}
+          />
+        </form>
+      </div>
     </div>
   );
 }
